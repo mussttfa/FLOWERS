@@ -1,0 +1,504 @@
+/*yazı fontu ekleme*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+* {
+    /* EVRENSEL*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*padding boşluğu eklediğimde yapı bozumuyor*/
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+    /* yukarıadan ve asğıdan 20px sağ ve sol aouto*/
+    padding: 20px 0;
+}
+
+.navbar-left {
+
+    display: flex;
+    /* esnek olarak yatay hale getirir*/
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+
+.navbar-left-logo {
+    /* headerda sol kısım*/
+
+    font-family: 'Indie Flower';
+    text-decoration: none;
+    line-height: 44px;
+    font-size: 44px;
+    color: rgb(39, 82, 39);
+
+}
+
+.navbar-left-logo:hover {
+    /* logonun üzerine geldiğimde*/
+    transform: scale(1.1);
+    transition: ease 0.5;
+    /* gerçekleştirme hızı*/
+}
+
+.navbar-left-menu {
+    /*menü kısmı*/
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.navbar-left-menu a {
+    /* navbardaki a etikleri*/
+    text-decoration: none;
+    font-size: 18 px;
+    color: gray;
+
+}
+
+.navbar-left-menu a:first-child {
+    color: black;
+    font-weight: 700;
+
+}
+
+.navbar-left-menu a:hover {
+    color: green;
+}
+
+.navbar-right {
+
+    display: flex;
+    flex-direction: row;
+    /* row yatay colum dikey olarak kullanır*/
+    gap: 20px
+}
+
+.navbar-right i {
+    cursor: pointer;
+    /* üzerine geldiğimde tıklama işareti çıksın*/
+    font-size: 22px;
+}
+
+.navbar-right i:hover {
+    /* hover üzerine geldiğimde demektir*/
+    color: gray;
+    transform: scale(1.1);
+    /* scale ile 1.1 kat büyür*/
+    transition: ease 0.5s;
+}
+
+.banner {
+
+    display: flex;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    gap: 50px;
+    background-color: #c1dcdc;
+}
+
+.banner-left {
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 40px;
+    padding: 40px 0 40px 50px;
+    z-index: 2;
+
+}
+
+.banner-right {
+    width: 50%;
+
+
+}
+
+.banner-left h1 {
+    font-weight: 800px;
+    font-size: 64px;
+    line-height: 64px;
+    width: 480px;
+
+
+
+}
+
+.banner-left-contents {
+
+    display: flex;
+    gap: 50px;
+
+}
+
+.contents {
+    display: flex;
+    gap: 50px;
+}
+
+.contents:first-child {
+
+    padding-right: 50px;
+    border-right: 1px solid black;
+
+}
+
+.contents p {
+    font-size: 32px;
+    font-weight: 600px;
+
+}
+
+.contents span {
+    font-size: 18px;
+
+
+}
+
+.banner-left-search {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    border-radius: 15px;
+
+}
+
+
+
+.banner-left-search input {
+    border: none;
+    outline: none;
+    width: 80%;
+    font-size: 18px;
+
+}
+
+.banner-left-search i {
+    background-color: #c1dcdc;
+    padding: 8px 10px;
+    border-radius: 10px;
+
+}
+
+.banner-right {
+
+    width: 50%;
+    position: relative;
+}
+
+.banner-right img {
+
+    position: absolute;
+
+    transform: scaleX(-1);
+    /* ayna görevi görür*/
+    bottom: 0px;
+}
+
+.banner-right-bg {
+    position: absolute;
+    background-color: gray;
+    width: 400px;
+    height: 360px;
+    bottom: 0;
+    right: 10%;
+    border-radius: 50% 20% 0px 50%;
+}
+
+/* product*/
+.product {
+
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.product-title {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.more {
+    background-color: #c1dcdc;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.product-card {
+    /*tüm kartların kapsayıcısı*/
+
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+
+
+
+
+}
+
+.product-cards {
+    /* kart yapısı*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+
+
+
+}
+
+.product-cards img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+
+}
+
+.product-card p {
+    font-size: 22px;
+    font-weight: 600px;
+    margin-top: 10px;
+
+}
+
+.product-card span {
+    font-size: 18px;
+    color: gray;
+}
+
+.about {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba (134, 126, 126, 0.134);
+    width: 100%;
+    padding: 20px 0;
+
+}
+
+.about-title {
+
+    text-align: center;
+
+}
+
+.about-title h1 {
+    font-size: 32px;
+
+
+}
+
+.about-title p {
+    font-size: 18px;
+    color: gray;
+
+}
+
+.about-card {
+    /*tüm kartların kapsayıcısı */
+
+    display: flex;
+    align-items: center;
+
+}
+
+.about-cards {
+    /* her bir kart*/
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.about-cards i {
+    font-size: 42px;
+    background-color: #c1dcdc;
+    padding: 20px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+
+}
+
+.about-cards p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about-cards span {
+
+    text-align: center;
+    /* kendi içinde ortalar*/
+
+
+}
+
+.kategoriler {
+    text-align: center;
+}
+
+.kategoriler p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.buton {
+    background-color: #c1dcdc;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.frame-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+
+}
+
+
+.frame-card {
+    width: 100%;
+}
+
+/*FOOTER*/
+.footer {
+
+    display: flex;
+    flex-direction: row;
+    background-color: #c1dcdc;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.footer-left h1 {
+    font-family: 'Indie Flower';
+}
+
+.footer-left p {
+    font-size: 18px;
+    color: black;
+}
+
+.footer-left-social {
+
+    display: flex;
+    gap: 5px;
+
+}
+
+.footer-left-social a {
+    border: 1px solid rgba(134, 126, 126, 0.655);
+    color: #566060;
+    padding: 20px;
+    border-radius: 50%;
+
+}
+
+.footer-right {
+
+    display: flex;
+    gap: 10px;
+
+}
+
+.footer-right ul li {
+    list-style-type: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.footer-right ul li:nth-child(1) {
+    font-weight: 800;
+}
+
+
+.footer-left-social a:hover {
+    transform: scale(1.1);
+    transition: ease .5s;
+}
+
+
+
+
+  @media screen and (max-width:900px){
+    /*browser 0-900px genişliğinde iken*/
+    .banner-left{
+        /* border:5px solid red; */
+        width: 100%;
+    }
+    .banner-left h1{
+        background-color: white;
+        opacity: 0.8;
+        border-radius: 20px;
+        padding: 10px;
+        width: 100%;
+        font-size: 35px /*!important*/;
+        /*important satırı, mutlaka yapılması gerekeni anlatır. bu scopedaki .banner-left h1, .banner-left h1 etiketi öncesinde yer alırsa çalışmaz ve important kullanmak zorunda kalırız*/
+        /*.banner-left h1 sonrasında yer alırsa important olmadan da çalışır. Bu nedenle
+        responsive ayarları, dosyanın en sonunda yapıyoruz*/
+    }
+    .banner-left-contents{
+        background-color: white;
+        opacity: 0.8;/*saydamlık*/
+        border-radius: 20px;
+        padding: 10px;
+    } 
+    .footer{
+        flex-direction: column;
+    }
+    .footer-right{
+        display: none;
+    }
+    .footer-left{
+        text-align: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+}
